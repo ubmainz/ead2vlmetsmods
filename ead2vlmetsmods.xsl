@@ -23,7 +23,7 @@
             <xsl:element name="mets:metsHdr">
                 <xsl:element name="mets:agent">
                     <xsl:attribute name="ROLE">CREATOR</xsl:attribute>
-                    <xsl:element name="mets:name">ArchivDarmstadt-Skript Knepper 07/2021</xsl:element>
+                    <xsl:element name="mets:name">ead2vlmetsmods-Skript Knepper 12/2023</xsl:element>
                 </xsl:element>
             </xsl:element>
             <xsl:message>
