@@ -44,7 +44,7 @@
                                         <xsl:value-of
                                             select="lower-case(translate(//ead:dsc/ead:c/ead:did/ead:unitid[not(@type)],' ','_'))"/>
                                         <xsl:text>_nr_</xsl:text>
-                                        <xsl:value-of select="replace(ead:did/ead:unitid[not(@type)],'/','--')"/>
+                                        <xsl:value-of select="replace(translate(ead:did/ead:unitid[not(@type)],' ,','_-'),'/','--')"/>
                                     </xsl:element>
                                 </xsl:element>
                                 <xsl:element name="mods:titleInfo">
