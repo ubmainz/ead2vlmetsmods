@@ -5,7 +5,7 @@
            xsi:schemaLocation="http://www.loc.gov/METS/&#xA;                http://www.loc.gov/standards/mets/version18/mets.xsd">
    <mets:metsHdr>
       <mets:agent ROLE="CREATOR">
-         <mets:name>ArchivDarmstadt-Skript Knepper 07/2021</mets:name>
+         <mets:name>ead2vlmetsmods-Skript Knepper 12/2023</mets:name>
       </mets:agent>
    </mets:metsHdr>
    <mets:dmdSec ID="md-archivdarmstadt-v191">

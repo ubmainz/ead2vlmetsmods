@@ -11,6 +11,8 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:ead="urn:isbn:1-931666-22-9">
     <xsl:output encoding="UTF-8" method="xml" indent="yes" omit-xml-declaration="no"/>
+    <!-- institution name -->
+    <xsl:param name="intitutionname">Hessisches Staatsarchiv Darmstadt</xsl:param>
     <!-- identifier part of institution -->
     <xsl:param name="institution">hstad_</xsl:param>
     <xsl:template match="/">
@@ -65,7 +67,7 @@
                                     <xsl:text>text</xsl:text>
                                 </xsl:element>
                                 <xsl:element name="mods:location">
-                                    <xsl:element name="mods:physicalLocation">Hessisches Staatsarchiv Darmstadt</xsl:element>
+                                    <xsl:element name="mods:physicalLocation"><xsl:value-of select="$intitutionname"/></xsl:element>
                                     <xsl:element name="mods:physicalLocation"><xsl:attribute name="authority" select="'marcorg'"/>DE-2556</xsl:element>
                                     <xsl:element name="mods:shelfLocator">
                                         <xsl:value-of
