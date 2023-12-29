@@ -11,6 +11,8 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:ead="urn:isbn:1-931666-22-9">
     <xsl:output encoding="UTF-8" method="xml" indent="yes" omit-xml-declaration="no"/>
+    <!-- identifier part of institution -->
+    <xsl:param name="institution">hstad_</xsl:param>
     <xsl:template match="/">
         <xsl:element name="mets:mets">
             <xsl:namespace name="xsi" select="'http://www.w3.org/2001/XMLSchema-instance'"/>
@@ -38,7 +40,7 @@
                             <xsl:element name="mods:mods">
                                 <xsl:element name="mods:recordInfo">
                                     <xsl:element name="mods:recordIdentifier">
-                                        <xsl:text>hstad_</xsl:text>
+                                        <xsl:value-of select="$institution"/>
                                         <xsl:value-of
                                             select="lower-case(translate(//ead:dsc/ead:c/ead:did/ead:unitid[not(@type)],' ','_'))"/>
                                         <xsl:text>_nr_</xsl:text>
